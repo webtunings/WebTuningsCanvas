@@ -1,9 +1,18 @@
 
-
+           //Constructor function
+           /*
+           var canvas = document.getElementById("myCanvas");
+           var c = canvas.getContext('2d');
+           var wCanvas = new WebTuningsCanvas(c);
+           */
            function WebTuningsCanvas(context){
                                 this.context = context;
                             }
 
+           //draws a grid of size rows x columns
+           //cell dimenstion = width x height
+           //x,y - top left coordinate of grid
+           //wCanvas.grid(100,200,100,100,6,6);
            WebTuningsCanvas.prototype.grid = function(x,y,width,height,rows,columns){
                                     this.context.save();
                                     this.context.lineCap = "square";
