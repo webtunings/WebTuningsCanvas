@@ -1,1 +1,51 @@
-cheetsheet
+beginPath() - creates a new path, resets current default path
+moveTo(x,y) - moves the cursor, creates a new subpath inside a path
+lineTo(x,y) - add point in the current subpath, doesn't create new subpath
+stroke() - strokes all subpaths of current path
+closePath() - closes the current subpath and starts a new subpath, ideally this should be closeSubpath()
+//context object works on current default path
+
+lineWidth - keep it even
+lineCap - butt, round, square
+lineJoin - miter, round, bevel
+
+fill - doesn't affect current path or subpath
+fillStyle - CSS color
+strokeStyle - CSS color
+
+fillRect(x,y,w,h) - doesn't affect current default path
+strokeRect(x,y,w,h) - doesn't affect current default path
+clearRect(x,y,w,h) - doesn't affect current default path
+
+arc(x,y,r,0,2*Math.PI,false) - affects current default path
+arcTo(x1,y1,x2,y2,r) - affects current default path
+quadraticCurveTo(x1,y1,x2,y2)
+bezierCurveTo(x1,y1,x2,y2,x3,y3)
+
+rect(x,y,w,h) - fill/stroke needs to be called, affects current default path
+
+translate(x,y)
+scale(x,y)
+rotate(angle)
+
+transform - a,b,c,d,e,f - cumulative
+setTransform - resets previous transform
+
+200200 - scale(2,2)
+011000 - reflection y=x axis
+100100 - default
+101100 - shear in x 
+102100 - 2 x shear in y
+110100 - shear in y
+120100 - 2 x shear in y
+122100 - 2 x shear x + 2 x shear y
+
+var lg = c.createLinerGradient(x1,y1,x2,y2) <-|--|--->
+lg.addColorStop(offset,color)
+
+var rg = c.createRadialGradient(x1,y1,x2,y2) // inner circle outer circle
+rg.addColorStop(offset,color)
+
+canvas.width
+canvas.height
+
