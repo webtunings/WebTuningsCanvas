@@ -49,3 +49,10 @@ rg.addColorStop(offset,color)
 canvas.width
 canvas.height
 
+globalAlpha - 0 to 1
+globalCompositeOperation
+clip() - retrict the drawing region
+
+c.font
+fillText(text,x,y,w)
+strokeText(text,x,y,w)
