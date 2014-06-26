@@ -53,6 +53,10 @@ globalAlpha - 0 to 1
 globalCompositeOperation
 clip() - retrict the drawing region
 
-c.font
+c.font - font for text - CSS font
 fillText(text,x,y,w)
 strokeText(text,x,y,w)
+textAlign - start,end,left,right,center, left=start, end=right at the x,y in fillText
+textBaseLine - alphabetic - default, p,q,y lower portion below x,y, top,bottom,middle,hanging,ideographic
+
+
