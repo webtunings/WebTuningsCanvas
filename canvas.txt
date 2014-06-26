@@ -76,6 +76,12 @@ canvas.getBoundingClientRect().left - viewport canvas left
 canvas coordinate = event.clientX - canvas.getBoundingClientRect().left
 isPointInPath(x,y) - true if x,y is part of current default path
 
+requestAnimationFrame
+cancelAnimationFrame
+
+HRT requestAnimationFrame(f); f(time)
+window.performance.now()
+
 
 
 
