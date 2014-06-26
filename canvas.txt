@@ -59,4 +59,61 @@ strokeText(text,x,y,w)
 textAlign - start,end,left,right,center, left=start, end=right at the x,y in fillText
 textBaseLine - alphabetic - default, p,q,y lower portion below x,y, top,bottom,middle,hanging,ideographic
 
+shadowColor - gradients and patterns are not allowed - CSS color - hsla - make a=0 shadow will disappear - shortcut
+shadowBlur - 20 - blurness
+shadowOffsetX = 10 -> could be negative
+shadowOffsetY = 10 -> could be negative
+shadow is applicable to any kind of shape - curve,text,rect - all
+
+drawImage(image,x,y) -> image is HTMLImageElement - x,y - starting point of image
+drawImage(image,x1,y1,w,h) -> scale up or down by setting w and h
+drawImage(image,cx,cy,cw,ch,px,py,pw,ph) -> start crop at cx,cy, crop width height is cw,ch, place at px,py with height pw,ph - could be scaled up or down by setting pw,ph
+
+clearRect(0,0,canvas.width,canvas.height) -> clear complete canvas
+
+event.clientX - viewport mouse position
+canvas.getBoundingClientRect().left - viewport canvas left
+canvas coordinate = event.clientX - canvas.getBoundingClientRect().left
+isPointInPath(x,y) - true if x,y is part of current default path
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
